@@ -1,0 +1,265 @@
+.nav__menu{
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.8rem;
+}
+
+.nav__menu_options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav__menu_hamburger_icon{
+    display: none;
+    width: 2.2rem;
+}
+
+.nav__menu_hamburger_icon:hover{
+    background: rgba(64, 68, 89, .6);
+    border-radius: 0.2rem;
+}
+
+.nav__menu_HBO_logo{
+    max-width: 3rem;
+    margin-right: 1.8rem;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.nav__menu_HBO_logo:hover{
+    filter: drop-shadow(0 0 0.6rem rgba(255,255,255, 0.6));
+}
+
+
+.nav__menu_options ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu_options ul li{
+    margin-left: 1.8rem;
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    border-radius: 0.6rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.nav__menu_options ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(64, 68, 89, .6);
+    border-radius: inherit; 
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    transform: scale(1.3);
+}
+
+.nav__menu_options ul li:hover::after {
+    background: rgba(64, 68, 89, .8);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.nav__menu_login{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__menu_login_link a{
+    color: white;
+    margin-right: 1.8rem;
+    font-weight: bold;
+    position: relative;
+    padding: 0.8rem 1rem;
+    z-index: 2;
+    border-radius: 0.6rem;
+}
+
+.nav__menu_login_link a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(64, 68, 89, .6);
+    border-radius: inherit; 
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    transform: scale(1.3);
+}
+
+.nav__menu_login_link a:hover::after {
+    background: rgba(64, 68, 89, .8);
+    opacity: 1;
+    width: 0%;
+    transform: scale(1);
+    animation: buttomFillFromLeft 0.5s linear forwards;
+}
+
+.nav__menu_subscribe_link a{
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.9rem;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.nav__menu_subscribe_link a:hover{
+    background: transparent;
+    color: white;
+    
+}
+
+.nav__menu_subscribe_link a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(64, 68, 89, .6);
+    border-radius: inherit; 
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    transform: scale(1.3);
+}
+
+.nav__menu_subscribe_link a:hover::after {
+    background: rgba(64, 68, 89, .8);
+    opacity: 1;
+    width: 0%;
+    transform: scale(1);
+    animation: buttomFillFromLeft 0.5s linear forwards;
+}
+
+@keyframes buttomFillFromLeft {
+    100%{
+        width: 100%;
+    }
+}
+
+.nav__menu_options_mobile{
+    background: rgba(64, 68, 89, .6);
+    width: 0%;
+    max-width: 18rem;
+    padding: 1rem;
+    border-radius: 0 0 1.5rem 0rem;
+    text-align: -webkit-center;
+    text-align: center;
+    display: none;
+    position: relative;
+    animation: widthManipulation 0.3s forwards;
+}
+
+.nav__menu_options_mobile ul li{
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    border-radius: 0.6rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    color: white;
+}
+
+.nav__menu_options_mobile ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(64, 68, 89, .6);
+    border-radius: inherit; 
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.nav__menu_options_mobile ul li:hover::after {
+    background: rgba(64, 68, 89, .8);
+    opacity: 1;
+    transform: scale(1);
+    font-size: 7rem;
+}
+
+.nav__menu_options_mobile ul li:hover {
+    font-size: 1.099999rem;
+    transition: 0.1s ease-in-out;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1280px) {
+    .nav__menu_options ul{
+        display: none;
+    }
+
+    .nav__menu_icons_left{
+        display: flex;
+    }
+
+    .nav__menu_hamburger_icon{
+        display: block;
+        width: 2.2rem;
+    }
+}
+
+
+/* ----------------------------------------------------- */
+/* Multi-purpose css classes (mainly JavaScript DOM manipulation) */
+.displayBlockForElement{
+    display: block;
+    width: 0%;
+}
+
+.displayBlockForElement::after{
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+@keyframes widthManipulation {
+    100%{
+        width: 100%!important;
+    }
+}
+
+
