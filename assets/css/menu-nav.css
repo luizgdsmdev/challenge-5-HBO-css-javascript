@@ -24,6 +24,26 @@
     width: 2.2rem;
 }
 
+.nav__menu_hamburger_icon_line {
+    stroke: white;
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.nav__menu_hamburger_icon.hamburger_icon_to_x .menu_hamburger_icon_line_top {
+    transform: translateY(15px) translateX(-13px) rotate(45deg);
+}
+
+.nav__menu_hamburger_icon.hamburger_icon_to_x .menu_hamburger_icon_line_middle {
+    opacity: 0;
+}
+
+.nav__menu_hamburger_icon.hamburger_icon_to_x .menu_hamburger_icon_line_bottom {
+    transform: translateY(-14px) translateX(-15px) rotate(-45deg);
+}
+
 .nav__menu_hamburger_icon:hover{
     background: rgba(64, 68, 89, .6);
     border-radius: 0.2rem;
@@ -39,7 +59,6 @@
 .nav__menu_HBO_logo:hover{
     filter: drop-shadow(0 0 0.6rem rgba(255,255,255, 0.6));
 }
-
 
 .nav__menu_options ul{
     display: flex;
@@ -170,17 +189,17 @@
     }
 }
 
-.nav__menu_options_mobile{
-    background: rgba(64, 68, 89, .6);
-    width: 0%;
-    max-width: 18rem;
-    padding: 1rem;
-    border-radius: 0 0 1.5rem 0rem;
-    text-align: -webkit-center;
+.nav__menu_options_mobile {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    max-width: 100vw;
+    border-radius: 0;
     text-align: center;
-    display: none;
+    display: block;
     position: relative;
-    animation: widthManipulation 0.3s forwards;
+    overflow: hidden;
+    height: 0vh;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 .nav__menu_options_mobile ul li{
@@ -192,6 +211,11 @@
     z-index: 2;
     position: relative;
     color: white;
+    margin: 0.5rem 1rem;
+}
+
+.nav__menu_options_mobile ul li:nth-child(1){
+    margin-top: 1rem;
 }
 
 .nav__menu_options_mobile ul li::after {
@@ -217,15 +241,34 @@
 }
 
 .nav__menu_options_mobile ul li:hover {
-    font-size: 1.099999rem;
+    font-size: 1.1rem;
     transition: 0.1s ease-in-out;
 }
 
 
+/* ----------------------------------------------------- */
+/* Multi-purpose css classes (mainly JavaScript DOM manipulation) */
+.nav__menu_options_mobile.nav__menu_options_mobile_open {
+    width: 100vw;
+    height: calc(100vh - 3.8rem);
+}
 
+.nav__menu_options_mobile::after {
+    content: "";
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+.nav__menu_options_Login{
+    display: none;
+}
 
-
+.nav__menu_options_SignUp{
+    display: none;
+}
 
 @media screen and (max-width:1280px) {
     .nav__menu_options ul{
@@ -242,24 +285,39 @@
     }
 }
 
-
-/* ----------------------------------------------------- */
-/* Multi-purpose css classes (mainly JavaScript DOM manipulation) */
-.displayBlockForElement{
-    display: block;
-    width: 0%;
-}
-
-.displayBlockForElement::after{
-    content: "";
-    display: block;
-    position: absolute;
-}
-
-@keyframes widthManipulation {
-    100%{
-        width: 100%!important;
+@media screen and (min-width: 769px) {
+    .nav__menu_options_mobile {
+        width: 100%;
+        max-width: 50vw!important;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .nav__menu_options_mobile {
+        width: 100vw;
+        max-width: 100vw;
+    } 
+    .nav__menu_options_mobile.nav__menu_options_mobile_open {
+        max-width: 100vw;
+        max-height: calc(100vh - 4.1rem);
+        overflow-y: auto;
+    } 
+}
 
+@media screen and (max-width: 520px) {
+    .nav__menu_options_Login{
+        display: block;
+    }
+    .nav__menu_login_link{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav__menu_options_SignUp{
+        display: block;
+    }
+    .nav__menu_subscribe_link{
+        display: none;
+    }
+}
