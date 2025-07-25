@@ -1,0 +1,8 @@
+
+.content__top-element{
+    background-image: url("../images/hbo-max-2530.avif");
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
