@@ -205,6 +205,8 @@
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
     z-index: 1;
     padding-top: 5rem;
+    visibility: collapse;
+    transition: 0.4s ease-in-out;
 }
 
 .nav__menu_options_mobile ul li{
@@ -256,7 +258,9 @@
 .nav__menu_options_mobile.nav__menu_options_mobile_open {
     width: 100vw;
     height: calc(100vh - 3.8rem);
-    max-height: 1200px; 
+    max-height: 1200px;
+    visibility: visible;
+    transition: 0.6s ease-in-out;
 }
 
 .nav__menu_options_mobile::after {
@@ -266,6 +270,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    visibility: visible;
+    transition: 0.6s ease-in-out;
 }
 
 .nav__menu_options_Login{
@@ -325,5 +331,14 @@
     }
     .nav__menu_subscribe_link{
         display: none;
+    }
+    .nav__menu_icons_left {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 }
