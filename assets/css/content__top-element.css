@@ -159,9 +159,9 @@
     position: relative;
     z-index: 2;
     transition: color 0.6s ease;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 300;
-    padding: 0.6rem 2rem;
+    padding: 0.3rem 2.5rem;
 }
 
 #content__top-plan-period-month::after {
@@ -199,7 +199,6 @@
     background-color: #36394a;
 }
 
-
 .content__top-plan{
     width: 100%;
     max-width: 20rem;
@@ -214,7 +213,7 @@
     align-content: space-around;
     justify-content: space-between;
     align-items: stretch;
-    height: 18rem;
+    max-height: 30rem;
 }
 
 .content__top-plan-title{
@@ -262,6 +261,59 @@ hr {
     align-items: stretch;
 }
 
+.content__top-cards-month h4{
+    text-align: -webkit-center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.content__top-plan-list-price span{
+    font-size: 1rem;
+    font-weight:300;
+}
+.content__top-plan-list-price{
+    text-align: -webkit-center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.content__top-plan-list-price.hide_price{
+    display: none;
+}
+
+.hide_title{
+    visibility: hidden;
+}
+
+.content__top-plan-buttom{
+    text-align: -webkit-center;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    color: black;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+
+.content__top-plan-buttom a{
+    text-decoration: none;
+    color: black;
+    transition: 0.6s ease-in-out;
+}
+
+.content__top-plan-buttom:hover{
+    transform: scale(1.03);
+}
+
+
+
 
 
 
@@ -284,7 +336,7 @@ hr {
 
 @media screen and (max-width:1200px) {
     #content__top{
-        min-height: 99rem;
+        min-height: 108rem;
     }
 }
 
@@ -299,7 +351,7 @@ hr {
 
 @media screen and (max-width:799px) {
     #content__top{
-        min-height: 125rem;
+        min-height: 135rem;
     }
 }
 
@@ -344,6 +396,12 @@ hr {
 @media screen and (max-width:380px) {
     .content__top-banner-content-logo{
         max-width: 14rem;
+    }
+}
+
+@media screen and (max-width:340px) {
+    #content__top{
+        min-height: 135rem;
     }
 }
 
