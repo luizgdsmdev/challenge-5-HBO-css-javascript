@@ -215,7 +215,7 @@
     border-radius: 0.6rem;
     transition: 0.3s ease-in-out;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
     position: relative;
     color: white;
     margin: 0.5rem 1rem;
@@ -223,6 +223,10 @@
 
 .nav__menu_options_mobile ul li:nth-child(1){
     margin-top: 1rem;
+}
+
+#nav__menu_options_mobile{
+    position: fixed;
 }
 
 .nav__menu_options_mobile ul li::after {
@@ -238,6 +242,7 @@
     transition: 0.3s ease-in-out;
     opacity: 0;
     transform: scale(1.1);
+    color: white;
 }
 
 .nav__menu_options_mobile ul li:hover::after {
