@@ -1,10 +1,127 @@
-
+body{
+    height: 3000px;
+}
 .content__top-element{
     background-image: url("../images/hbo-max-2530.avif");
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     position: absolute;
     z-index: -1;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    transition: 0.4s ease-in-out;
+    -webkit-box-shadow: inset 0px -10rem 7rem 1rem rgba(0, 0, 0, 1);
+    box-shadow: inset 0px -10rem 7rem 1rem rgba(0, 0, 0, 1);
+}
+
+
+.content__top-banner-content{
+    text-align: -webkit-center;
+    padding: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+
+.content__top-banner-content-logo{
+    width: 100%;
+    max-width: 21rem;
+    padding: 1.5rem;
+}
+
+.content__top-banner-content-price{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.content__top-banner-buttom{
+    margin-top: 1.8rem;
+}
+.content__top-banner-buttom a{
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.6rem;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.content__top-banner-buttom a:hover{
+    background: transparent;
+    color: white;
+    
+}
+
+.content__top-banner-buttom a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(112, 118, 143);
+    border-radius: inherit; 
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    transform: scale(1.3);
+}
+
+.content__top-banner-buttom a:hover::after {
+    background: rgb(112, 118, 143);
+    opacity: 1;
+    width: 0%;
+    transform: scale(1);
+    animation: buttomFillFromLeft 0.5s linear forwards;
+}
+
+
+
+
+@media screen and (max-width:1440px) {
+    .content__top-banner-content-logo{
+        max-width: 18rem;
+    }
+    .content__top-element{
+        background-image: url("../images/hbo-max-1440.jpg");
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .content__top-banner-content-logo{
+        max-width: 18rem;
+    }
+    .content__top-element{
+        background-image: url("../images/hbo-max-1024.jpg");
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content__top-banner-content-logo{
+        max-width: 16rem;
+    }
+    .content__top-element{
+        background-image: url("../images/hbo-max-768.jpg");
+    }
+}
+
+@media screen and (max-width:575px) {
+    .content__top-element{
+        background-image: url("../images/hbo-max-575.avif");
+    }
+}
+
+@media screen and (max-width:380px) {
+    .content__top-banner-content-logo{
+        max-width: 14rem;
+    }
 }
