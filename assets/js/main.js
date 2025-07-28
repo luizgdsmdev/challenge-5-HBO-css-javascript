@@ -1,4 +1,5 @@
 
+document.addEventListener('DOMContentLoaded', () => {
 //Control the opening and closing of the navbar on mobile and screen lower than 1280px
 let nav__menu_hamburger_icon = document.getElementById("nav__menu_hamburger_icon");
 
@@ -53,4 +54,5 @@ content__topPlanPeriodAnnual.addEventListener("click", (event) =>{
     monthPriceElementList.forEach((element) => {
         element.classList.add("hide_price");
     });
+});
 });

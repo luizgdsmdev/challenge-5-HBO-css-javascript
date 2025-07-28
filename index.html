@@ -15,21 +15,62 @@
 </head>
 <body>
 
-    <section style="position: absolute;">
-        <nav id="nav__menu" class="nav__menu">
-        <div id="nav__menu_options" class="nav__menu_options">
-            <div id="nav__menu_icons_left" class="nav__menu_icons_left">
-                <img id="nav__menu_HBO_logo" class="nav__menu_HBO_logo" loading="lazy" src="./assets/images/logo_nav_bar.png" alt="HBO logo" title="HBO home">
-                
-                <svg id="nav__menu_hamburger_icon" class="nav__menu_hamburger_icon" viewBox="0 0 100 80" width="40" height="40">
-                    <line class="nav__menu_hamburger_icon_line menu_hamburger_icon_line_top" x1="10" y1="20" x2="90" y2="20"></line>
-                    <line class="nav__menu_hamburger_icon_line menu_hamburger_icon_line_middle" x1="10" y1="40" x2="90" y2="40"></line>
-                    <line class="nav__menu_hamburger_icon_line menu_hamburger_icon_line_bottom" x1="10" y1="60" x2="90" y2="60"></line>
-                </svg>
-                
-            </div>
+        <section style="position: absolute;">
+            <nav id="nav__menu" class="nav__menu">
+            <div id="nav__menu_options" class="nav__menu_options">
+                <div id="nav__menu_icons_left" class="nav__menu_icons_left">
+                    <img id="nav__menu_HBO_logo" class="nav__menu_HBO_logo" loading="lazy" src="./assets/images/logo_nav_bar.png" alt="HBO logo" title="HBO home">
+                    
+                    <svg id="nav__menu_hamburger_icon" class="nav__menu_hamburger_icon" viewBox="0 0 100 80" width="40" height="40">
+                        <line class="nav__menu_hamburger_icon_line menu_hamburger_icon_line_top" x1="10" y1="20" x2="90" y2="20"></line>
+                        <line class="nav__menu_hamburger_icon_line menu_hamburger_icon_line_middle" x1="10" y1="40" x2="90" y2="40"></line>
+                        <line class="nav__menu_hamburger_icon_line menu_hamburger_icon_line_bottom" x1="10" y1="60" x2="90" y2="60"></line>
+                    </svg>
+                    
+                </div>
 
+                <ul>
+                    <li class="nav__menu_options_li">
+                        Movies
+                    </li>
+                    <li class="nav__menu_options_li">
+                        Tv Shows
+                    </li>
+                    <li class="nav__menu_options_li">
+                        Kids & Family
+                    </li>
+                    <li class="nav__menu_options_li">
+                        Channels
+                    </li> 
+                    <li class="nav__menu_options_li">
+                        Free to Watch
+                    </li>
+                    <li class="nav__menu_options_li">
+                        Sports
+                    </li>
+                </ul>
+            </div>
+            <div id="nav__menu_login" class="nav__menu_login">
+                <p id="nav__menu_login_link" class="nav__menu_login_link">
+                    <a href="">Login</a>
+                </p>
+
+                <p id="nav__menu_subscribe_link" class="nav__menu_subscribe_link">
+                    <a href="">Sign up</a>
+                </p>
+
+            </div>
+        </nav>
+
+
+        <div id="nav__menu_options_mobile" class="nav__menu_options_mobile">
             <ul>
+                <li class="nav__menu_options_li nav__menu_options_Login">
+                    Login
+                </li>
+                <li class="nav__menu_options_li nav__menu_options_SignUp">
+                    Sign up
+                </li>
                 <li class="nav__menu_options_li">
                     Movies
                 </li>
@@ -50,51 +91,8 @@
                 </li>
             </ul>
         </div>
-        <div id="nav__menu_login" class="nav__menu_login">
-            <p id="nav__menu_login_link" class="nav__menu_login_link">
-                <a href="#">Login</a>
-            </p>
+        </section>
 
-            <p id="nav__menu_subscribe_link" class="nav__menu_subscribe_link">
-                <a href="#">Sign up</a>
-            </p>
-
-        </div>
-    </nav>
-
-
-    <div id="nav__menu_options_mobile" class="nav__menu_options_mobile">
-        <ul>
-            <li class="nav__menu_options_li nav__menu_options_Login">
-                Login
-            </li>
-            <li class="nav__menu_options_li nav__menu_options_SignUp">
-                Sign up
-            </li>
-            <li class="nav__menu_options_li">
-                Movies
-            </li>
-            <li class="nav__menu_options_li">
-                Tv Shows
-            </li>
-            <li class="nav__menu_options_li">
-                Kids & Family
-            </li>
-            <li class="nav__menu_options_li">
-                Channels
-            </li> 
-            <li class="nav__menu_options_li">
-                Free to Watch
-            </li>
-            <li class="nav__menu_options_li">
-                Sports
-            </li>
-        </ul>
-    </div>
-    </section>
-    
-    
-    
 
         <section id="content__top" class="content__top">
             <div id="content__top-wrapper" class="content__top-wrapper">
@@ -104,149 +102,154 @@
                         <h4 id="content__top-banner-content-price" class="content__top-banner-content-price">Plans starting at <b>$18,90/month</b></h4>
 
                         <div id="content__top-banner-buttom" class="content__top-banner-buttom">
-                            <a href="#">Start now</a>
+                            <a href="#content__top-plan-period-annual">Start now</a>
                         </div> 
                     </div>
                 </section>
+            </div>
+        </section>
 
-                <section id="content__top-prices" class="content__top-prices">
-                    <div id="content__top-plan-type" class="content__top-plan-type">
-                        <p id="content__top-prices-p" class="content__top-prices-p">
-                            CHOOSE THE BEST PLAN FOR YOU
+        <section id="content__top-prices" class="content__top-prices">
+            <div id="content__top-plan-type" class="content__top-plan-type">
+                <p id="content__top-prices-p" class="content__top-prices-p">
+                    CHOOSE THE BEST PLAN FOR YOU
+                </p>
+
+                <div id="content__top-prices-plan" class="content__top-prices-plan">
+                    <div id="content__top-plan-period-month" class="content__top-plan-period-month" title="Monthly payment">
+                        <p>
+                            monthly 
                         </p>
+                    </div>
+                    <div id="content__top-plan-period-annual" class="content__top-plan-period-annual plan-focus" title="Annual payment">
+                        <p>
+                            annual
+                        </p>
+                    </div>
+                </div>
 
-                        <div id="content__top-prices-plan" class="content__top-prices-plan">
-                            <div id="content__top-plan-period-month" class="content__top-plan-period-month" title="Monthly payment">
-                                <p>
-                                    monthly 
-                                </p>
-                            </div>
-                            <div id="content__top-plan-period-annual" class="content__top-plan-period-annual plan-focus" title="Annual payment">
-                                <p>
-                                    annual
-                                </p>
-                            </div>
-                        </div>
-
-                        <div id="content__top-prices-cards" class="content__top-prices-cards">
-                            <div id="content__top-cards-month" class="content__top-cards-month">
-                                <h4 id="content__top-cards-month-title">Save up to 36%</h4>
-                                <div id="content__top-cards-wrapper" class="content__top-cards-wrapper">
-                                    <div id="content__top-plan" class="content__top-plan">
-                                        <div class="content__top-plan-alias">
-                                            <p class="content__top-plan-title">Basic with Ads</p>
-                                            <hr><br>
-                                            
-                                            <div class="content__top-plan-list">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.5,13.6l4.78,5.87,12.22-15" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path></svg>
-                                                <p><b>2 devices</b> at the same time</p>
-                                            </div>
-
-                                            <div class="content__top-plan-list">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6.5,20h11" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><rect x="1.5" y="4" width="21" height="12" rx="1" ry="1" style="fill: none; stroke: #ffffff; stroke-width: 2px;"></rect></svg>
-                                                <p><b>Full HD</b> resolution</p>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="content__top-plan-list-price annual_price">
-                                            12x $18,90<span>/month</span><br>
-                                            <span>Total annual price $226,80</span>
-                                        </div>
-
-                                        <div class="content__top-plan-list-price month_price hide_price">
-                                            $29,90<span>/month</span>
-                                        </div>
-
-                                        <div id="content__top-plan-buttom" class="content__top-plan-buttom">
-                                            <a href="#">Choose your plan</a>
-                                        </div>
-                                        </div>
+                <div id="content__top-prices-cards" class="content__top-prices-cards">
+                    <div id="content__top-cards-month" class="content__top-cards-month">
+                        <h4 id="content__top-cards-month-title">Save up to 36%</h4>
+                        <div id="content__top-cards-wrapper" class="content__top-cards-wrapper">
+                            <div id="content__top-plan" class="content__top-plan">
+                                <div class="content__top-plan-alias">
+                                    <p class="content__top-plan-title">Basic with Ads</p>
+                                    <hr><br>
+                                    
+                                    <div class="content__top-plan-list">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.5,13.6l4.78,5.87,12.22-15" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path></svg>
+                                        <p><b>2 devices</b> at the same time</p>
                                     </div>
 
-                                    <div id="content__top-plan-1" class="content__top-plan">
-                                        <div class="content__top-plan-alias">
-                                            <p class="content__top-plan-title">Standard</p>
-                                            <hr><br>
-                                            
-                                            <div class="content__top-plan-list">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.5,13.6l4.78,5.87,12.22-15" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path></svg>
-                                                <p><b>2 devices</b> at the same time</p>
-                                            </div>
-
-                                            <div class="content__top-plan-list">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6.5,20h11" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><rect x="1.5" y="4" width="21" height="12" rx="1" ry="1" style="fill: none; stroke: #ffffff; stroke-width: 2px;"></rect></svg>
-                                                <p><b>Full HD</b> resolution</p>
-                                            </div>
-                                            <div class="content__top-plan-list">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.5,20h17" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><path d="m12,4v11m0,0l-4.5-4.5m4.5,4.5l4.5-4.5" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path></svg>
-                                                <p><b>30 downloads</b> to enjoy offline</p>
-                                            </div>
-                                        </div>
-                                        
-                                        <div>
-                                            <div class="content__top-plan-list-price annual_price">
-                                            12x $29,90<span>/month</span><br>
-                                            <span>Total annual price $358,80</span>
-                                        </div>
-
-                                        <div class="content__top-plan-list-price month_price hide_price">
-                                            $39,90<span>/month</span>
-                                        </div>
-
-                                        <div id="content__top-plan-1-buttom" class="content__top-plan-buttom">
-                                            <a href="#">Choose your plan</a>
-                                        </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div id="content__top-plan-2" class="content__top-plan">
-                                        <div class="content__top-plan-alias">
-                                            <p class="content__top-plan-title">Platinum</p>
-                                            <hr><br>
-                                            
-                                            <div class="content__top-plan-list">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.5,13.6l4.78,5.87,12.22-15" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path></svg>
-                                                <p><b>2 devices</b> at the same time</p>
-                                            </div>
-
-                                            <div class="content__top-plan-list">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6.5,20h11" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><rect x="1.5" y="4" width="21" height="12" rx="1" ry="1" style="fill: none; stroke: #ffffff; stroke-width: 2px;"></rect></svg>
-                                                <p><b>Full HD</b> resolution</p>
-                                            </div>
-                                            <div class="content__top-plan-list">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.5,20h17" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><path d="m12,4v11m0,0l-4.5-4.5m4.5,4.5l4.5-4.5" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path></svg>
-                                                <p><b>100 downloads</b> to enjoy offline</p>
-                                            </div>
-                                            <div class="content__top-plan-list">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="3.5" y="13" width="5" height="7" rx="1" ry="1" style="fill: none; stroke: #ffffff; stroke-width: 2px;"></rect><path d="m5.5,13c0-3.86,0-9,6.5-9s6.5,5.14,6.5,9" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><rect x="15.5" y="13" width="5" height="7" rx="1" ry="1" style="fill: none; stroke: #ffffff; stroke-width: 2px;"></rect></svg>
-                                                <p><b>Dolby Atmos</b> Audio</p>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="content__top-plan-list-price annual_price">
-                                            12x $39,90<span>/month</span><br>
-                                            <span>Total annual price $478,80</span>
-                                        </div>
-
-                                        <div class="content__top-plan-list-price month_price hide_price">
-                                            $55,90<span>/month</span>
-                                        </div>
-
-                                        <div id="content__top-plan-2-buttom" class="content__top-plan-buttom">
-                                            <a href="#">Choose your plan</a>
-                                        </div>
-                                        </div>
-
+                                    <div class="content__top-plan-list">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6.5,20h11" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><rect x="1.5" y="4" width="21" height="12" rx="1" ry="1" style="fill: none; stroke: #ffffff; stroke-width: 2px;"></rect></svg>
+                                        <p><b>Full HD</b> resolution</p>
                                     </div>
                                 </div>
+
+                                <div>
+                                    <div class="content__top-plan-list-price annual_price">
+                                    12x $18,90<span>/month</span><br>
+                                    <span>Total annual price $226,80</span>
+                                </div>
+
+                                <div class="content__top-plan-list-price month_price hide_price">
+                                    $29,90<span>/month</span>
+                                </div>
+
+                                <div id="content__top-plan-buttom" class="content__top-plan-buttom">
+                                    <a href="">Choose your plan</a>
+                                </div>
+                                </div>
                             </div>
-                            
+
+                            <div id="content__top-plan-1" class="content__top-plan">
+                                <div class="content__top-plan-alias">
+                                    <p class="content__top-plan-title">Standard</p>
+                                    <hr><br>
+                                    
+                                    <div class="content__top-plan-list">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.5,13.6l4.78,5.87,12.22-15" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path></svg>
+                                        <p><b>2 devices</b> at the same time</p>
+                                    </div>
+
+                                    <div class="content__top-plan-list">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6.5,20h11" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><rect x="1.5" y="4" width="21" height="12" rx="1" ry="1" style="fill: none; stroke: #ffffff; stroke-width: 2px;"></rect></svg>
+                                        <p><b>Full HD</b> resolution</p>
+                                    </div>
+                                    <div class="content__top-plan-list">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.5,20h17" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><path d="m12,4v11m0,0l-4.5-4.5m4.5,4.5l4.5-4.5" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path></svg>
+                                        <p><b>30 downloads</b> to enjoy offline</p>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div class="content__top-plan-list-price annual_price">
+                                    12x $29,90<span>/month</span><br>
+                                    <span>Total annual price $358,80</span>
+                                </div>
+
+                                <div class="content__top-plan-list-price month_price hide_price">
+                                    $39,90<span>/month</span>
+                                </div>
+
+                                <div id="content__top-plan-1-buttom" class="content__top-plan-buttom">
+                                    <a href="">Choose your plan</a>
+                                </div>
+                                </div>
+
+                            </div>
+
+                            <div id="content__top-plan-2" class="content__top-plan">
+                                <div class="content__top-plan-alias">
+                                    <p class="content__top-plan-title">Platinum</p>
+                                    <hr><br>
+                                    
+                                    <div class="content__top-plan-list">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.5,13.6l4.78,5.87,12.22-15" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path></svg>
+                                        <p><b>2 devices</b> at the same time</p>
+                                    </div>
+
+                                    <div class="content__top-plan-list">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6.5,20h11" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><rect x="1.5" y="4" width="21" height="12" rx="1" ry="1" style="fill: none; stroke: #ffffff; stroke-width: 2px;"></rect></svg>
+                                        <p><b>Full HD</b> resolution</p>
+                                    </div>
+                                    <div class="content__top-plan-list">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.5,20h17" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><path d="m12,4v11m0,0l-4.5-4.5m4.5,4.5l4.5-4.5" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path></svg>
+                                        <p><b>100 downloads</b> to enjoy offline</p>
+                                    </div>
+                                    <div class="content__top-plan-list">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="3.5" y="13" width="5" height="7" rx="1" ry="1" style="fill: none; stroke: #ffffff; stroke-width: 2px;"></rect><path d="m5.5,13c0-3.86,0-9,6.5-9s6.5,5.14,6.5,9" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path><rect x="15.5" y="13" width="5" height="7" rx="1" ry="1" style="fill: none; stroke: #ffffff; stroke-width: 2px;"></rect></svg>
+                                        <p><b>Dolby Atmos</b> Audio</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="content__top-plan-list-price annual_price">
+                                    12x $39,90<span>/month</span><br>
+                                    <span>Total annual price $478,80</span>
+                                </div>
+
+                                <div class="content__top-plan-list-price month_price hide_price">
+                                    $55,90<span>/month</span>
+                                </div>
+
+                                <div id="content__top-plan-2-buttom" class="content__top-plan-buttom">
+                                    <a href="">Choose your plan</a>
+                                </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="content__top-prices-disclaimer">
+                            <!-- <p>
+                                *Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e Platinum pode conter anúncios. Downloads podem ter restrições em algumas categorias de conteúdo. Saiba mais em: help.hbomax.com/plans. Economia calculada com base no preço da assinatura anual vs. a assinatura mensal regular ao longo de 12 meses
+                            </p> -->
                         </div>
                     </div>
-                </section>
+                    
+                </div>
             </div>
         </section>
 
