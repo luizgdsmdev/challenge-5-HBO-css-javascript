@@ -1,6 +1,6 @@
 .content__top{
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     z-index: 1;
     background-size: cover;
     background-position: center center; 
@@ -17,7 +17,7 @@
 .content__top-element{
     background-image: url("../images/hbo-max-2530.avif");
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     z-index: -1;
     background-size: cover;
     background-position: center center;
@@ -66,7 +66,7 @@
     padding: 0.8rem 1.6rem;
     border-radius: 0.6rem;
     position: relative;
-    transition: 0.3s ease-in-out;
+    transition: 0.6s ease-in-out;
 }
 
 .content__top-banner-buttom a:hover{
@@ -85,7 +85,7 @@
     background: rgb(112, 118, 143);
     border-radius: inherit; 
     z-index: -1;
-    transition: 0.3s ease-in-out;
+    transition: 0.6s ease-in-out;
     opacity: 0;
     transform: scale(1.3);
 }
@@ -121,33 +121,152 @@
 .content__top-prices-plan{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-}
-
-.content__top-prices-plan{
     border: 1px solid white;
     width: fit-content;
     margin: 0 auto;
     border-radius: 2rem;
-    margin-top: 2rem;
     font-size: 1.5rem;
+    margin: 2rem;
+    justify-self: center;
 }
 
-.content__top-plan-period-month p, .content__top-plan-period-annual p{
-    font-size: 1.5rem;
-    font-weight: 300;
-    padding: 1rem 2rem;
+.content__top-plan-period-month, .content__top-plan-period-annual{
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem 0 0 2rem;
     cursor: pointer;
 }
 
+.content__top-plan-period-month:hover{
+    background-color: #4043527e;
+    transition: background-color 0.6s ease, transform 0.6s ease;
+}
+
+.content__top-plan-period-annual:hover{
+    background-color: #4043527e;
+    transition: background-color 0.6s ease, transform 0.6s ease;
+}
+
+.content__top-plan-period-annual{
+    border-radius: 0 2rem 2rem 0;
+}
+
+.content__top-plan-period-month p, .content__top-plan-period-annual p{
+    position: relative;
+    z-index: 2;
+    transition: color 0.6s ease;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0.6rem 2rem;
+}
+
+#content__top-plan-period-month::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #404352;
+    z-index: 1;
+    transition: background-color 0.6s ease, transform 0.6s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+    border-radius: 2rem 0 0 2rem;
+}
+
+#content__top-plan-period-annual::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #404352;
+    z-index: 1;
+    transition: background-color 0.6s ease, transform 0.6s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+#content__top-plan-period-month.plan-focus:after,
+#content__top-plan-period-annual.plan-focus:after {
+    transform: scaleX(1);
+    background-color: #36394a;
+}
+
+
+.content__top-plan{
+    width: 100%;
+    max-width: 20rem;
+    background-color: #36394a;
+    color: white;
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+    margin: 1rem;
+}
+
+.content__top-plan-title{
+    padding-bottom: 1rem!important;
+}
+
+hr {
+    max-width: 10rem;
+    margin: 0 auto;
+}
+
+.content__top-plan p{
+    font-size: 1.5rem;
+}
+
+.content__top-plan-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content__top-plan-list svg{
+ max-width: 1rem;
+}
+
+.content__top-plan-list p{
+    font-size: 1rem;
+    padding: 0 0.9rem;
+    font-weight: 300;
+}
+
+.content__top-plan-list b{
+    font-weight: bold;
+}
+
+
+
+.content__top-cards-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
 
 
 
 
+
+
+@media screen and (min-width:1441px) {
+    #content__top{
+        min-height: 89rem;
+    }
+}
 
 @media screen and (max-width:1440px) {
     .content__top-banner-content-logo{
@@ -155,6 +274,9 @@
     }
     .content__top-element{
         background-image: url("../images/hbo-max-1440.jpg");
+    }
+    #content__top{
+        min-height: 87rem;
     }
 }
 
@@ -167,12 +289,21 @@
     }
 }
 
+@media screen and (max-width:799px) {
+    #content__top{
+        min-height: 100rem;
+    }
+}
+
 @media screen and (max-width:768px) {
     .content__top-banner-content-logo{
         max-width: 16rem;
     }
     .content__top-element{
         background-image: url("../images/hbo-max-768.jpg");
+    }
+    .content__top-banner-content{
+        padding-top: 5rem;
     }
 }
 
@@ -182,8 +313,32 @@
     }
 }
 
+@media screen and (max-width:453px) {
+    .content__top-plan-period-month{
+        border-radius: 2rem 2rem 0px 0px;
+        width: 100%;
+    }
+    .content__top-plan-period-annual {
+        border-radius: 0 0 2rem 2rem;
+        width: 100%;
+    }
+    #content__top-plan-period-month::after {
+        transform-origin: top;
+        border-radius: 2rem 2rem 0px 0px;
+    }
+
+    #content__top-plan-period-annual::after {
+        transform-origin: bottom;
+        border-radius: 0 0 2rem 2rem;
+    }
+}
+
 @media screen and (max-width:380px) {
     .content__top-banner-content-logo{
         max-width: 14rem;
     }
 }
+
+
+
+
