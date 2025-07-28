@@ -208,6 +208,13 @@
     border-radius: 0.6rem;
     padding: 1.5rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 18rem;
 }
 
 .content__top-plan-title{
@@ -246,8 +253,6 @@ hr {
     font-weight: bold;
 }
 
-
-
 .content__top-cards-wrapper{
     display: flex;
     flex-direction: row;
@@ -260,11 +265,11 @@ hr {
 
 
 
+ 
 
-
-@media screen and (min-width:1441px) {
+@media screen and (min-width:1200px) {
     #content__top{
-        min-height: 89rem;
+        min-height: 79rem;
     }
 }
 
@@ -275,8 +280,11 @@ hr {
     .content__top-element{
         background-image: url("../images/hbo-max-1440.jpg");
     }
+}
+
+@media screen and (max-width:1200px) {
     #content__top{
-        min-height: 87rem;
+        min-height: 99rem;
     }
 }
 
@@ -291,7 +299,7 @@ hr {
 
 @media screen and (max-width:799px) {
     #content__top{
-        min-height: 100rem;
+        min-height: 125rem;
     }
 }
 
