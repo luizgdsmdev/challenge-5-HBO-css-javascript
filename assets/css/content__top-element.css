@@ -1,9 +1,9 @@
 .content__top{
     width: 100vw;
-    height: 80vh;
-    z-index: -1;
+    height: 95vh;
+    z-index: 1;
     background-size: cover;
-    background-position: center center;
+    background-position: center center; 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -17,7 +17,7 @@
 .content__top-element{
     background-image: url("../images/hbo-max-2530.avif");
     width: 100vw;
-    height: 80vh;
+    height: 95vh;
     z-index: -1;
     background-size: cover;
     background-position: center center;
@@ -125,9 +125,26 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
     margin-top: 2rem;
 }
+
+.content__top-prices-plan{
+    border: 1px solid white;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.content__top-plan-period-month p, .content__top-plan-period-annual p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+
 
 
 
