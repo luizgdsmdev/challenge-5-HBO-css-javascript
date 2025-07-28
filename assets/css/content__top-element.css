@@ -1,20 +1,32 @@
-body{
-    height: 3000px;
-}
-.content__top-element{
-    background-image: url("../images/hbo-max-2530.avif");
+.content__top{
     width: 100vw;
     height: 80vh;
-    position: absolute;
     z-index: -1;
     background-size: cover;
     background-position: center center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    position: absolute;
+}
+
+.content__top-element{
+    background-image: url("../images/hbo-max-2530.avif");
+    width: 100vw;
+    height: 80vh;
+    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
     transition: 0.4s ease-in-out;
     -webkit-box-shadow: inset 0px -10rem 7rem 1rem rgba(0, 0, 0, 1);
     box-shadow: inset 0px -10rem 7rem 1rem rgba(0, 0, 0, 1);
@@ -24,9 +36,8 @@ body{
 .content__top-banner-content{
     text-align: -webkit-center;
     padding: 1.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
-
 
 .content__top-banner-content-logo{
     width: 100%;
@@ -42,8 +53,12 @@ body{
 }
 
 .content__top-banner-buttom{
-    margin-top: 1.8rem;
+    margin-top: 2.9rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
 .content__top-banner-buttom a{
     color: black;
     font-weight: bold;
@@ -52,7 +67,6 @@ body{
     border-radius: 0.6rem;
     position: relative;
     transition: 0.3s ease-in-out;
-    z-index: 999;
 }
 
 .content__top-banner-buttom a:hover{
@@ -82,6 +96,38 @@ body{
     width: 0%;
     transform: scale(1);
     animation: buttomFillFromLeft 0.5s linear forwards;
+}
+
+.content__top-wrapper{
+    display: contents;
+}
+
+.content__top-prices{
+    background-color: black;
+    color: white;
+    margin-top: 2rem;
+    width: 100vw;
+}
+
+.content__top-prices p{
+    font-weight: 600;
+    line-height: 2.4rem;
+    font-size: 1.9rem;
+    text-align: -webkit-center;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+
+.content__top-prices-plan{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
 }
 
 
