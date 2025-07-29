@@ -55,4 +55,30 @@ content__topPlanPeriodAnnual.addEventListener("click", (event) =>{
         element.classList.add("hide_price");
     });
 });
+
+
+
+//Manage the infinite carrossel
+let content__bottomCarrosselListLeft = document.getElementById("content__bottom-carrossel-list-left");
+let content__bottomCarrosselListRight = document.getElementById("content__bottom-carrossel-list-right");
+let content__bottomCarrosselItemList = document.querySelectorAll(".content__bottom-carrossel-item");
+let content__bottomCarrosselItemListRight = document.querySelectorAll(".content__bottom-carrossel-item");
+
+content__bottomCarrosselItemList.forEach(card =>{
+    let newHtmlItem = card.cloneNode(true);
+    content__bottomCarrosselListLeft.appendChild(newHtmlItem);
+});
+
+content__bottomCarrosselItemListRight.forEach(card =>{
+    let newHtmlItem = card.cloneNode(true);
+    content__bottomCarrosselListRight.prepend(newHtmlItem);
+});
+
+content__bottomCarrosselListLeft.style.animation = "infiniteCarrosselLeft 1600s linear infinite";
+content__bottomCarrosselListRight.style.animation = "infiniteCarrosselRight 1600s linear infinite";
+
+
+
+
+
 });

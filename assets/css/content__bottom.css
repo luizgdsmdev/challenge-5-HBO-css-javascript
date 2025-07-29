@@ -8,15 +8,18 @@
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 2rem;
     padding: 1rem;
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 .content__bottom-carrossel h3{
     color: white;
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    place-self: center;
 }
 
 .content__bottom-carrossel-list{
@@ -27,13 +30,124 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scrollbar-width: none;
 }
 
 .content__bottom-carrossel-item{
-    width: 150px;
-    height: 100px;
+    max-width: 920px;
     background-color: white;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
+    height: 15.8rem;
+    width: 28rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: currentcolor;
+}
+
+.bottom-carrossel-img-1{
+    background-image: url("../images/content__bottom-movie-1.avif");
+}
+
+.bottom-carrossel-img-2{
+    background-image: url("../images/content__bottom-movie-2.avif");
+}
+
+.bottom-carrossel-img-3{
+    background-image: url("../images/content__bottom-movie-3.avif");
+}
+
+.bottom-carrossel-img-4{
+    background-image: url("../images/content__bottom-movie-4.avif");
+}
+
+.bottom-carrossel-img-5{
+    background-image: url("../images/content__bottom-movie-5.avif");
+}
+
+.bottom-carrossel-img-6{
+    background-image: url("../images/content__bottom-movie-6.avif");
+}
+
+.bottom-carrossel-img-7{
+    background-image: url("../images/content__bottom-movie-7.avif");
+}
+
+.bottom-carrossel-img-8{
+    background-image: url("../images/content__bottom-movie-8.avif");
+}
+
+.bottom-carrossel-img-9{
+    background-image: url("../images/content__bottom-movie-9.avif");
+}
+
+.bottom-carrossel-img-10{
+    background-image: url("../images/content__bottom-movie-10.avif");
+}
+
+.bottom-carrossel-img-11{
+    background-image: url("../images/content__bottom-movie-11.avif");
+}
+
+.bottom-carrossel-img-12{
+    background-image: url("../images/content__bottom-movie-12.avif");
+}
+
+.bottom-carrossel-img-13{
+    background-image: url("../images/content__bottom-movie-13.avif");
+}
+
+.bottom-carrossel-img-14{
+    background-image: url("../images/content__bottom-movie-14.avif");
+}
+
+.bottom-carrossel-img-15{
+    background-image: url("../images/content__bottom-movie-15.avif");
+}
+
+.bottom-carrossel-img-16{
+    background-image: url("../images/content__bottom-movie-16.avif");
+}
+
+.bottom-carrossel-img-17{
+    background-image: url("../images/content__bottom-movie-17.avif");
+}
+
+.bottom-carrossel-img-18{
+    background-image: url("../images/content__bottom-movie-18.avif");
+}
+
+.bottom-carrossel-img-19{
+    background-image: url("../images/content__bottom-movie-19.avif");
+}
+
+.bottom-carrossel-img-20{
+    background-image: url("../images/content__bottom-movie-20.avif");
+}
+
+#content__bottom-carrossel-list-left{
+    width: max-content;
+}
+
+#content__bottom-carrossel-list-right{
+    flex-direction: row-reverse!important;
+}
+
+
+@keyframes infiniteCarrosselLeft{
+    to{
+        transform: translate(calc(-50% - 1.5em));
+    }
+}
+
+@keyframes infiniteCarrosselRight{
+     from {
+        transform: translate(calc(-91% + 1.5em)); /* Começa com os elementos mais à esquerda, fora da tela */
+    }
+    to {
+        transform: translate(calc(0% + 1.5em)); /* Ou algum valor que os mova para a posição inicial desejada */
+        /* O "to" atual de 50% - 1.5em significa que eles terminam movidos 50% para a direita do seu ponto inicial.
+           Se o objetivo é simular um loop contínuo onde os itens saem da tela à direita e reentram pela esquerda,
+           a lógica de `from` e `to` precisa ser cuidadosamente calibrada com o `prepend`. */
+    }
 }
