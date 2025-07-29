@@ -75,7 +75,7 @@ content__bottomCarrosselItemListRight.forEach(card =>{
 });
 
 content__bottomCarrosselListLeft.style.animation = "infiniteCarrosselLeft 1600s linear infinite";
-content__bottomCarrosselListRight.style.animation = "infiniteCarrosselRight 1600s linear infinite";
+content__bottomCarrosselListRight.style.animation = "infiniteCarrosselRight 2600s linear infinite";
 
 
 
