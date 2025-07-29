@@ -1,0 +1,39 @@
+.content__bottom-carrossel{
+    background-color: rgb(0, 0, 0);
+    display: block;
+    text-align: -webkit-center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.content__bottom-carrossel h3{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.content__bottom-carrossel-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.content__bottom-carrossel-item{
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    margin-left: 1rem;
+}
