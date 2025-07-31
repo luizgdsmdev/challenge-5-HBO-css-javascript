@@ -151,3 +151,18 @@
            a lógica de `from` e `to` precisa ser cuidadosamente calibrada com o `prepend`. */
     }
 }
+
+
+@media screen and (max-width:580px) {
+    .content__bottom-carrossel-item{
+        height: 13.8rem;
+        width: 24rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .content__bottom-carrossel-item {
+        height: 11.8rem;
+        width: 21rem;
+    }
+}
